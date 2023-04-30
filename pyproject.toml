@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "prefect-civi"
+version = "0.1.0"
+description = "Civicrm APIv4 integration to Prefect"
+authors = ["Taylormadeapps <taylormadeapps@icloud.com>"]
+readme = "README.md"
+packages = [{include = "prefect_civi"}]
+
+[stool.poetry.dependencie]
+python = "^3.7"
+civicrmapi = { git = "https://github.com/taylormadeapps/civicrmapi.git", branch = "master" }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

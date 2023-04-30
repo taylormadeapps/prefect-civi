@@ -1,7 +1,7 @@
 from pydantic import Field, SecretStr
 from prefect.blocks.core import Block
 
-class Secret(Block):
+class CiviAuth(Block):
     """
     A block that represents a secret value. The value stored in this block will be obfuscated when
     this block is logged or shown in the UI.
@@ -28,4 +28,3 @@ class Secret(Block):
     def get(self):
         return self.value.get_secret_value()
         
-print("felch")

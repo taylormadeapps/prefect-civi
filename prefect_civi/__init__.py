@@ -1,9 +1,9 @@
 import civicrmapi
 import prefect
-from .configblock import *
+from .civiauth import *
 
 def hello():
-    print("hello from prefect-civi kenobi")
+    print("hello from prefect-civi")
     
     
     

@@ -1,31 +1,17 @@
 from civicrmapi.rest import RestApiV4
 
-api_key=""
-connection_url=""
-basicauth_user=None
-basicauth_password=None
 
-static_rest_instance=None
-
-def get_client():
-    global static_rest_instance
-    
-    if not static_rest_instance:
-        if basicauth_user and basicauth_password:
-            auth_str={"user":basicauth_user,"pass":basicauth_password.get_secret_value()}
-        else:
-            auth_str=None
-        
-        static_rest_instance=RestApiV4(connection_url,api_key,auth_str)
-    
-    return static_rest_instance
-    
 class CiviClient:
     def __init__(self,connection_url,api_key,basicauth_user,basicauth_password):
         if basicauth_user and basicauth_password:
             auth_str={"user":basicauth_user,"pass":basicauth_password}
         else:
             auth_str=None
+        #print("apikey: "+api_key)
+        #print("connection_url: "+connection_url)
+        #print("basicauth_user: "+basicauth_user)
+        #print("basicauth_password: "+basicauth_password)
+        
         self.rest_client=RestApiV4(connection_url,api_key,auth_str)
         
         

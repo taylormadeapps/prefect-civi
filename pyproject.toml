@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "prefect-civi"
 version = "0.1.0"
-description = "Civicrm APIv4 integration to Prefect"
+description = "Civicrm APIv4 integration fors Prefect"
 authors = ["Taylormadeapps <taylormadeapps@icloud.com>"]
 readme = "README.md"
 packages = [{include = "prefect_civi"}]

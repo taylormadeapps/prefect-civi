@@ -22,3 +22,7 @@ Generate an API Key for a civi contact that is going to be used by the prefect c
     
 AuthX will protect the restapi endpoint. Make sure Authentication guard is on i.e. /civicrm/admin/setting/authx
 And also make sure: Acceptable credentials (HTTP X-Header) - has API KEY added.
+
+
+## Payload
+Use Civi API explorer to build payload -i.e. /civicrm/api4#/explorer//

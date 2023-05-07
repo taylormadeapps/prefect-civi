@@ -7,10 +7,6 @@ class CiviClient:
             auth_str={"user":basicauth_user,"pass":basicauth_password}
         else:
             auth_str=None
-        #print("apikey: "+api_key)
-        #print("connection_url: "+connection_url)
-        #print("basicauth_user: "+basicauth_user)
-        #print("basicauth_password: "+basicauth_password)
         
         self.rest_client=RestApiV4(connection_url,api_key,auth_str)
         

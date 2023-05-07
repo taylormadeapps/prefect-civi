@@ -15,9 +15,13 @@ civiauth_block = CiviAuth.load("civitest")
 
 # Get an instance of the prefect_civi.CiviClient class - populated with the configurred CiviCRM credentials configured for this block
 civiclient=civiauth_block.get_client()
+result=civiclient.call_api(entity : str,action :str, payload: dict)
 
 
 ```
+### Payload
+Use Civi API explorer to build payload -i.e. /civicrm/api4#/explorer//
+Use a python dict to represent the json payload that is suggested by the api explorer
 
 
 
@@ -45,5 +49,3 @@ AuthX will protect the restapi endpoint. Make sure Authentication guard is on i.
 And also make sure: Acceptable credentials (HTTP X-Header) - has API KEY added.
 
 
-## Payload
-Use Civi API explorer to build payload -i.e. /civicrm/api4#/explorer//

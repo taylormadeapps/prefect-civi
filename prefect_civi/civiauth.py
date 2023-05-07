@@ -20,6 +20,7 @@ class CiviAuth(CredentialsBlock):
 
         # Get an instance of the prefect_civi.CiviClient class - populated with the configurred CiviCRM credentials configured for this block
         civiclient=civiauth_block.get_client()
+        result=civiclient.call_api(entity : str,action :str, payload: dict)
         ```
     """
 

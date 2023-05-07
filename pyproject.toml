@@ -10,7 +10,8 @@ packages = [{include = "prefect_civi"}]
 python = "^3.7"
 prefect = "*"
 pydantic = "*"
-civicrmapi = { git = "https://github.com/taylormadeapps/civicrmapi.git", branch = "master" }
+civicrmapi = "*"
+#civicrmapi = { git = "https://github.com/taylormadeapps/civicrmapi.git", branch = "master" }
 
 [build-system]
 requires = ["poetry-core"]
